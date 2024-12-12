@@ -1,0 +1,27 @@
+header {
+    background-color: white;
+padding: 20px;
+    img {
+        width: 200px;
+        
+    }
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        li{
+            list-style: none;
+            margin-right: 20px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,160 @@
+main {
+    .section1 {
+        background-color: #f9f9f9;
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .container {
+
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: end;
+            align-items: end;
+
+            p {
+                font-size: 20px;
+            }
+
+            .p-negrita {
+                font-weight: 600;
+                font-size: 30px;
+            }
+
+            h1 {
+                color: #08859b;
+                font-size: 50px;
+                font-weight: 500;
+                font-family: "Sniglet", system-ui;
+            }
+
+            .sub {
+                color: #6d6d6d;
+            }
+        }
+
+        .container2 {
+            margin-left: 20px;
+
+            img {
+                width: 350px;
+                border-radius: 200px;
+                box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+    }
+
+    .section2 {
+        margin: 100px 0;
+        // align-items: center;
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        justify-content: center;
+
+
+        img {
+            margin-right: 20px;
+            width: 350px;
+            border-radius: 200px;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .container3 {
+            margin-left: 20px;
+            text-align: center;
+            width: 50%;
+
+            h1 {
+                color: #08859b;
+                font-size: 50px;
+                font-weight: 500;
+                font-family: "Sniglet", system-ui;
+            }
+        }
+    }
+
+    .container4 {
+        padding: 100px 0;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            color: #08859b;
+            font-size: 50px;
+            font-weight: 500;
+            font-family: "Sniglet", system-ui;
+        }
+    }
+
+    .container4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .container5 {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+         
+            div{
+                margin: 10px;
+                padding: 20px;
+                background:white;
+                border-radius: 20px;
+                box-shadow: 10px 10px 15px rgba(255, 174, 0, 0.5);
+            }
+            .git{
+                box-shadow: 10px 10px 15px rgba(54, 54, 54, 0.5);
+            }
+            .bootstrap{
+                box-shadow: 10px 10px 15px rgba(173, 120, 251, 0.5);
+            }
+            .js{
+                box-shadow: 10px 10px 15px rgba(254, 212, 27, 0.5);
+            }
+            .css{
+                box-shadow: 10px 10px 15px rgba(103, 179, 246, 0.5);
+            }
+            .visual{
+                box-shadow: 10px 10px 15px rgba(108, 185, 249, 0.5);
+            }
+            .java{
+                box-shadow: 10px 10px 15px rgba(245, 107, 107, 0.5);
+                
+                img{
+                    width: 50px;
+                } 
+            }
+            .sass{
+                box-shadow: 10px 10px 15px rgba(248, 146, 239, 0.5);
+                img{
+                    width: 50px;
+                }
+            }
+           
+        }
+       
+        }
+    }
+    .container6, .container7{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0;
+        h1 {
+            color: #08859b;
+            font-size: 50px;
+            font-weight: 500;
+            font-family: "Sniglet", system-ui;
+        }
+        
+          
+}
