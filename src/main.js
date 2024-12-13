@@ -1,7 +1,7 @@
 import './styles/main.scss';
 
 import './animacion.js';
-
+import './animacionrebote.js';
 
 //change the background of the page according to the value of the checkbox
 const input = document.querySelector('input[type="checkbox"]');
