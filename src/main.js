@@ -1,34 +1,12 @@
 import './styles/main.scss';
 
+import './animacion.js';
 
-const words = ["¡Hola!", "Bienvenido", "A GSAP"];
-let currentWord = 0;
 
-function typeEffect() {
-  const text = document.querySelector(".text");
-  text.textContent = ""; // Limpia el texto
-
-  gsap.to(text, {
-    textContent: words[currentWord], // Escribe la palabra actual
-    duration: 2,
-    ease: "power1.inOut",
-    onComplete: () => {
-      // Borra el texto después de completarse
-      gsap.to(text, {
-        textContent: "",
-        duration: 1,
-        delay: 1,
-        ease: "power1.inOut",
-        onComplete: () => {
-          currentWord = (currentWord + 1) % words.length; // Cambia a la siguiente palabra
-          typeEffect();
-        },
-      });
-    },
-  });
+//change the background of the page according to the value of the checkbox
+const input = document.querySelector('input[type="checkbox"]');
+function handleInput() {
+  const { checked } = this;
+  document.querySelector('body').style.background = checked ? '#151d29' : '#d6e7f7';
 }
-
-document.addEventListener("DOMContentLoaded", typeEffect);
-
-
-  
+input.addEventListener('input', handleInput);

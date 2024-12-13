@@ -1,28 +1,32 @@
-const words = ["¡Hola!", "Bienvenido", "A GSAP"];
-let currentWord = 0;
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml11 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
-function typeEffect() {
-  const text = document.querySelector(".text");
-  text.textContent = ""; // Limpia el texto
-
-  gsap.to(text, {
-    textContent: words[currentWord], // Escribe la palabra actual
-    duration: 2,
-    ease: "power1.inOut",
-    onComplete: () => {
-      // Borra el texto después de completarse
-      gsap.to(text, {
-        textContent: "",
-        duration: 1,
-        delay: 1,
-        ease: "power1.inOut",
-        onComplete: () => {
-          currentWord = (currentWord + 1) % words.length; // Cambia a la siguiente palabra
-          typeEffect();
-        },
-      });
-    },
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+  })
+  .add({
+    targets: '.ml11 .line',
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 100
+  }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: (el, i) => 34 * (i+1)
+  }).add({
+    targets: '.ml11',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 100000
   });
-}
-
-document.addEventListener("DOMContentLoaded", typeEffect);
