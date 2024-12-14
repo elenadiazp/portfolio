@@ -3,14 +3,13 @@
 main {
 
     .section1 {
-
-        background-color: $color-white;
+        background-color: $bg-container;
         height: 90vh;
         @include row;
 
         .container {
 
-            margin-right: 20px;
+
             display: flex;
             flex-direction: column;
             text-align: end;
@@ -38,8 +37,6 @@ main {
         }
 
         .container2 {
-            margin-left: 20px;
-
             img {
                 width: 350px;
                 border-radius: 200px;
@@ -50,7 +47,6 @@ main {
     }
 
     .section2 {
-        margin: 100px 0;
         @include row;
         align-items: normal;
 
@@ -58,26 +54,19 @@ main {
             @include btn;
         }
 
-
         img {
-            margin-right: 100px;
             width: 400px;
         }
 
         .container3 {
-            margin-left: 20px;
             text-align: center;
             width: 40%;
-
 
             p {
                 font-size: 20px;
             }
 
             button {
-                margin-top: 30px;
-                padding: 10px 30px;
-
                 a {
                     font-size: 16px;
                 }
@@ -85,32 +74,24 @@ main {
         }
     }
 
+  
     .container4 {
-        padding: 100px 0;
         background-color: $bg-container;
         display: flex;
         justify-content: center;
 
-
-    }
-
-    .container4 {
         @include column;
 
         h1 {
-            margin-bottom: 40px;
             @include h1;
         }
 
         .container5 {
-            margin-top: 20px;
             display: flex;
             flex-direction: row;
 
             div {
                 @include row;
-                margin: 10px;
-                padding: 20px;
                 background: $color-white;
                 border-radius: 20px;
                 box-shadow: $shadow-html;
@@ -171,8 +152,6 @@ main {
 .container6,
 .container7 {
     @include column;
-    padding: 20px 0;
-
 
 }
 
@@ -184,16 +163,12 @@ main {
     }
 
     .proyectos {
-        margin: 20px 50px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-
         .card {
-            margin: 20px;
             background-color: $color-white;
             width: 30%;
-            padding: 20px;
             border-radius: 20px;
             box-shadow: $shadow-card;
 
@@ -202,12 +177,7 @@ main {
                 border-radius: 10px;
             }
 
-            .card-body {
-                .card-title {
-                    padding-top: 10px;
-                    padding-bottom: 5px;
-                }
-            }
+            
         }
     }
 
@@ -219,7 +189,6 @@ main {
 
         div {
             text-align: center;
-            margin-top: 20px;
             width: 40%;
 
             .btn {

@@ -19,8 +19,8 @@
 
 @mixin  h1 {
     color: $color-primary;
-    font-size: 50px;
-    font-weight: 500;
+    font-size: $font-size-h1;
+    font-weight: $font-weight-h1;
     font-family: $text-font-2;
 
 }
