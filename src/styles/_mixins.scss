@@ -44,3 +44,21 @@
     align-items: center;
     justify-content: space-between;
 }
+
+$breakpoints: (
+  "small": "max-width: 950px",
+);
+@mixin respond-to($breakpoint) {
+
+
+  $query: map-get($breakpoints, $breakpoint);
+
+  @if $query {
+    @media (#{$query}) {
+      @content;
+    }
+
+  } @else {
+      @error "No se encontró el breakpoint #{$breakpoint}";
+  }
+}

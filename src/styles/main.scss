@@ -4,6 +4,7 @@
 @use "layout" as *;
 @use "footer" as *;
 @use "globals" as *;
+@use "movile" as *;
 *{
     font-family:$text-font-1;
     margin: $margin-0;

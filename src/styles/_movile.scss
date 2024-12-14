@@ -1,0 +1,141 @@
+@use "globals" as *;
+
+@include respond-to("small") {
+    header {
+        @include column;
+
+        img {
+            width: 150px;
+        }
+    }
+
+    main {
+        .section1 {
+            padding-top: 50px;
+            @include column;
+
+            .container {
+
+                text-align: center;
+                align-items: center;
+
+                p {
+                    font-size: 1rem;
+                }
+
+                .p-negrita {
+
+                    font-size: 1.2rem;
+                }
+
+
+
+                .btn {
+                    @include btn;
+                }
+
+            }
+
+            .container2 {
+                img {
+                    width: 250px;
+                    border-radius: 200px;
+                    box-shadow: $shadow-img;
+                }
+
+                margin-left: 0;
+            }
+
+        }
+
+        .section2 {
+            @include column;
+            align-items: center;
+            margin-top: 30px;
+
+            .btn {
+                @include btn;
+            }
+
+            img {
+                margin-right: 0;
+                width: 250px;
+            }
+
+            .container3 {
+                text-align: center;
+                width: 90%;
+                margin-left: 0;
+
+                p {
+                    margin-top: 20px;
+                    font-size: 1rem;
+                }
+
+                button {
+                    margin-top: 30px;
+
+                    a {
+                        font-size: $font-size-a;
+                    }
+                }
+            }
+        }
+
+        .container4 {         
+            h1 {
+                @include h1;
+                text-align: center;
+            }
+            .container5 {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+        }
+        .container6 {
+            background-color: $bg-container;
+        
+            h1 {
+                @include h1;
+            }
+        
+            .proyectos {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                .card {
+                    background-color: $color-white;
+                    width: 100%;
+                    border-radius: 20px;
+                    box-shadow: $shadow-card;
+        
+                    img {
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+        
+                    
+                }
+            }
+        
+        }
+        .container7 {
+            .contacto {
+                @include column;
+        
+                div {
+                   
+                    width: 70%;
+        
+                }
+            }
+        
+        
+        }
+    }
+
+
+
+}
