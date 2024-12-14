@@ -6,18 +6,19 @@ $text-sub:#6d6d6d;
 $bg-container: #f9f9f9;
 $shadow-img:rgba(0, 0, 0, 0.5);
 
-$shadow-card:10px 10px 10px rgba(177, 177, 177, 0.5);
-$shadow-html:10px 10px 15px rgba(255, 174, 0, 0.5);
-$shadow-git:10px 10px 15px rgba(54, 54, 54, 0.5);
-$shadow-css:10px 10px 15px rgba(103, 179, 246, 0.5);
-$shadow-bootstrap:10px 10px 15px rgba(173, 120, 251, 0.5);
-$shadow-js:10px 10px 15px rgba(254, 212, 27, 0.5);
-$shadow-sass:10px 10px 15px rgba(248, 146, 239, 0.5);
-$shadow-figma: 10px 10px 15px rgba(109, 109, 109, 0.5);
-$shadow-visual:10px 10px 15px rgba(108, 185, 249, 0.5);
-$shadow-java:10px 10px 15px rgba(245, 107, 107, 0.5);
+$shadow-card: 0.625rem 0.625rem 0.625rem rgba(177, 177, 177, 0.5);
+$shadow-html: 0.625rem 0.625rem 0.9375rem rgba(255, 174, 0, 0.5);
+$shadow-git: 0.625rem 0.625rem 0.9375rem rgba(54, 54, 54, 0.5);
+$shadow-css: 0.625rem 0.625rem 0.9375rem rgba(103, 179, 246, 0.5);
+$shadow-bootstrap: 0.625rem 0.625rem 0.9375rem rgba(173, 120, 251, 0.5);
+$shadow-js: 0.625rem 0.625rem 0.9375rem rgba(254, 212, 27, 0.5);
+$shadow-sass: 0.625rem 0.625rem 0.9375rem rgba(248, 146, 239, 0.5);
+$shadow-figma: 0.625rem 0.625rem 0.9375rem rgba(109, 109, 109, 0.5);
+$shadow-visual: 0.625rem 0.625rem 0.9375rem rgba(108, 185, 249, 0.5);
+$shadow-java: 0.625rem 0.625rem 0.9375rem rgba(245, 107, 107, 0.5);
 
-$text-font-2:"Sniglet", system-ui;
+$text-font-2: "Sniglet", system-ui;
 
-$font-size-h1: 50px;
+$font-size-h1: 3.125rem; // 50px / 16
 $font-weight-h1: 500;
+$margin-20: 1.25rem; // 20px / 16
