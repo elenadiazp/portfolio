@@ -4,7 +4,7 @@ $color-primary:#08859b;
 $color-hover:#0cc0df;
 $text-sub:#6d6d6d;
 $bg-container: #f9f9f9;
-$shadow-img:rgba(0, 0, 0, 0.5);
+$shadow-img:0.625rem 0.625rem 0.9375rem rgba(0, 0, 0, 0.5);
 
 $shadow-card: 0.625rem 0.625rem 0.625rem rgba(177, 177, 177, 0.5);
 $shadow-html: 0.625rem 0.625rem 0.9375rem rgba(255, 174, 0, 0.5);
@@ -19,6 +19,9 @@ $shadow-java: 0.625rem 0.625rem 0.9375rem rgba(245, 107, 107, 0.5);
 
 $text-font-2: "Sniglet", system-ui;
 $text-font-1:'Montserrat', serif;
+$font-size-p: 20px;
+$font-size-pn: 30px;
+$font-size-a:16px;
 $font-size-h1: 3.125rem; // 50px / 16
 $font-weight-h1: 500;
 $margin-20: 1.25rem; // 20px / 16

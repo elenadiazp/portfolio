@@ -16,12 +16,12 @@ main {
             align-items: end;
 
             p {
-                font-size: 20px;
+                font-size: $font-size-p;
             }
 
             .p-negrita {
                 font-weight: 600;
-                font-size: 30px;
+                font-size: $font-size-pn;
             }
 
 
@@ -40,7 +40,7 @@ main {
             img {
                 width: 350px;
                 border-radius: 200px;
-                box-shadow: 10px 10px 15px $shadow-img;
+                box-shadow: $shadow-img;
             }
         }
 
@@ -63,12 +63,12 @@ main {
             width: 40%;
 
             p {
-                font-size: 20px;
+                font-size: $font-size-p;
             }
 
             button {
                 a {
-                    font-size: 16px;
+                    font-size: $font-size-a;
                 }
             }
         }
