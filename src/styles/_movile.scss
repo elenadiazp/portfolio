@@ -13,7 +13,7 @@
         .section1 {
             padding-top: 50px;
             @include column;
-         
+            height: 90vh;
             .container {
 
                 text-align: center;
