@@ -1,6 +1,7 @@
 @use "variables" as *;
+
 main {
-   
+
     .section1 {
         
         background-color: #f9f9f9;
@@ -32,7 +33,7 @@ main {
                 font-size: 50px;
                 font-weight: 500;
                 font-family: "Sniglet", system-ui;
-               
+
             }
 
             .sub {
@@ -115,25 +116,32 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-     h1{
-        margin-bottom: 40px;
-     }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
         .container5 {
             margin-top: 20px;
             display: flex;
             flex-direction: row;
-            
+
             div {
-               
+                display: flex;
+                flex-direction: row;
+                align-items: center;
                 margin: 10px;
                 padding: 20px;
                 background: white;
                 border-radius: 20px;
                 box-shadow: 10px 10px 15px rgba(255, 174, 0, 0.5);
+             
             }
 
             .git {
+                
                 box-shadow: 10px 10px 15px rgba(54, 54, 54, 0.5);
+
             }
 
             .bootstrap {
@@ -167,7 +175,8 @@ main {
                     width: 50px;
                 }
             }
-            .figma{
+
+            .figma {
                 box-shadow: 10px 10px 15px rgba(109, 109, 109, 0.5);
 
                 img {
@@ -198,63 +207,71 @@ main {
 
 .container6 {
     background-color: #f9f9f9;
-    .proyectos{
+
+    .proyectos {
         margin: 20px 50px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        .card{
-           
-           // flex: 1 1 calc(33.333% - 20px); 
-             // max-width: calc(33.333% - 20px);
+
+        .card {
+
+            // flex: 1 1 calc(33.333% - 20px); 
+            // max-width: calc(33.333% - 20px);
             margin: 20px;
             background-color: #ffffff;
             width: 30%;
             padding: 20px;
             border-radius: 20px;
             box-shadow: 10px 10px 10px rgba(177, 177, 177, 0.5);
-            img{
-            width: 100%;
-            border-radius: 10px;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
             }
-            .card-body{
-                .card-title{
+
+            .card-body {
+                .card-title {
                     padding-top: 10px;
                     padding-bottom: 5px;
                 }
             }
         }
     }
-   
+
 }
-.container7{
-    .contacto{
+
+.container7 {
+    .contacto {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        div{
+
+        div {
             text-align: center;
             margin-top: 20px;
             width: 40%;
         }
     }
-   
+
 
 }
+
 //ANIMACIONES*****************************
 .ml11 {
     font-weight: 700;
-  //  font-size: 3.5em;
-  }
+    //  font-size: 3.5em;
+}
+
 .ml11 .text-wrapper {
     position: relative;
     display: inline-block;
     padding-top: 0.1em;
     padding-right: 0.05em;
     padding-bottom: 0.15em;
-  }
-  
-  .ml11 .line {
+}
+
+.ml11 .line {
     opacity: 0;
     position: absolute;
     left: 0;
@@ -262,25 +279,41 @@ main {
     width: 3px;
     background-color: #000000;
     transform-origin: 0 50%;
-  }
-  
-  .ml11 .line1 { 
-    top: 0; 
+}
+
+.ml11 .line1 {
+    top: 0;
     left: 0;
-  }
-  
-  .ml11 .letter {
+}
+
+.ml11 .letter {
     display: inline-block;
     line-height: 1em;
-  }
+}
 
-  .ml6 {
+.ml6 {
     position: relative;
     font-weight: 900;
     font-size: 3.3em;
-  }
-  
-  .ml6 .text-wrapper {
+}
+
+.ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+
+  .ml9 .text-wrapper {
+    
     position: relative;
     display: inline-block;
     padding-top: 0.2em;
@@ -289,7 +322,12 @@ main {
     overflow: hidden;
   }
   
-  .ml6 .letter {
+  .ml9 .letter {
+    transform-origin: 50% 100%;
     display: inline-block;
     line-height: 1em;
+    color: #08859b;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Sniglet", system-ui;
   }
