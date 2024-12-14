@@ -1,15 +1,12 @@
-@use "variables" as *;
+@use "globals" as *;
 
 main {
 
     .section1 {
-        
-        background-color: #f9f9f9;
+
+        background-color: $color-white;
         height: 90vh;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        @include row;
 
         .container {
 
@@ -28,17 +25,16 @@ main {
                 font-size: 30px;
             }
 
-            h1 {
-                color: #08859b;
-                font-size: 50px;
-                font-weight: 500;
-                font-family: "Sniglet", system-ui;
 
-            }
 
             .sub {
-                color: #6d6d6d;
+                color: $text-sub;
             }
+
+            .btn {
+                @include btn;
+            }
+
         }
 
         .container2 {
@@ -47,7 +43,7 @@ main {
             img {
                 width: 350px;
                 border-radius: 200px;
-                box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+                box-shadow: 10px 10px 15px $shadow-img;
             }
         }
 
@@ -55,18 +51,17 @@ main {
 
     .section2 {
         margin: 100px 0;
-        // align-items: center;
-        display: flex;
-        flex-direction: row;
+        @include row;
+        align-items: normal;
 
-        justify-content: center;
+        .btn {
+            @include btn;
+        }
 
 
         img {
             margin-right: 100px;
             width: 400px;
-           // border-radius: 300px;
-           // box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
         }
 
         .container3 {
@@ -74,13 +69,6 @@ main {
             text-align: center;
             width: 40%;
 
-            h1 {
-                color: #08859b;
-                font-size: 50px;
-                font-weight: 500;
-                font-family: "Sniglet", system-ui;
-                margin-bottom: 20px;
-            }
 
             p {
                 font-size: 20px;
@@ -99,26 +87,19 @@ main {
 
     .container4 {
         padding: 100px 0;
-        background-color: #f9f9f9;
+        background-color: $bg-container;
         display: flex;
         justify-content: center;
 
-        h1 {
-            color: #08859b;
-            font-size: 50px;
-            font-weight: 500;
-            font-family: "Sniglet", system-ui;
-        }
+
     }
 
     .container4 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include column;
 
         h1 {
             margin-bottom: 40px;
+            @include h1;
         }
 
         .container5 {
@@ -127,41 +108,39 @@ main {
             flex-direction: row;
 
             div {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
+                @include row;
                 margin: 10px;
                 padding: 20px;
-                background: white;
+                background: $color-white;
                 border-radius: 20px;
-                box-shadow: 10px 10px 15px rgba(255, 174, 0, 0.5);
-             
+                box-shadow: $shadow-html;
+
             }
 
             .git {
-                
-                box-shadow: 10px 10px 15px rgba(54, 54, 54, 0.5);
+
+                box-shadow: $shadow-git;
 
             }
 
             .bootstrap {
-                box-shadow: 10px 10px 15px rgba(173, 120, 251, 0.5);
+                box-shadow: $shadow-bootstrap;
             }
 
             .js {
-                box-shadow: 10px 10px 15px rgba(254, 212, 27, 0.5);
+                box-shadow: $shadow-js;
             }
 
             .css {
-                box-shadow: 10px 10px 15px rgba(103, 179, 246, 0.5);
+                box-shadow: $shadow-css
             }
 
             .visual {
-                box-shadow: 10px 10px 15px rgba(108, 185, 249, 0.5);
+                box-shadow: $shadow-visual;
             }
 
             .java {
-                box-shadow: 10px 10px 15px rgba(245, 107, 107, 0.5);
+                box-shadow: $shadow-java;
 
                 img {
                     width: 50px;
@@ -169,7 +148,7 @@ main {
             }
 
             .sass {
-                box-shadow: 10px 10px 15px rgba(248, 146, 239, 0.5);
+                box-shadow: $shadow-sass;
 
                 img {
                     width: 50px;
@@ -177,7 +156,7 @@ main {
             }
 
             .figma {
-                box-shadow: 10px 10px 15px rgba(109, 109, 109, 0.5);
+                box-shadow: $shadow-figma;
 
                 img {
                     width: 50px;
@@ -191,22 +170,18 @@ main {
 
 .container6,
 .container7 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include column;
     padding: 20px 0;
 
-    h1 {
-        color: #08859b;
-        font-size: 50px;
-        font-weight: 500;
-        font-family: "Sniglet", system-ui;
-    }
+
 }
 
 .container6 {
-    background-color: #f9f9f9;
+    background-color: $bg-container;
+
+    h1 {
+        @include h1;
+    }
 
     .proyectos {
         margin: 20px 50px;
@@ -215,15 +190,12 @@ main {
         flex-wrap: wrap;
 
         .card {
-
-            // flex: 1 1 calc(33.333% - 20px); 
-            // max-width: calc(33.333% - 20px);
             margin: 20px;
-            background-color: #ffffff;
+            background-color: $color-white;
             width: 30%;
             padding: 20px;
             border-radius: 20px;
-            box-shadow: 10px 10px 10px rgba(177, 177, 177, 0.5);
+            box-shadow: $shadow-card;
 
             img {
                 width: 100%;
@@ -243,14 +215,17 @@ main {
 
 .container7 {
     .contacto {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include row-space;
 
         div {
             text-align: center;
             margin-top: 20px;
             width: 40%;
+
+            .btn {
+                @include btn;
+            }
+
         }
     }
 
@@ -277,7 +252,7 @@ main {
     left: 0;
     height: 100%;
     width: 3px;
-    background-color: #000000;
+    background-color: $color-black;
     transform-origin: 0 50%;
 }
 
@@ -312,22 +287,19 @@ main {
 }
 
 
-  .ml9 .text-wrapper {
-    
+.ml9 .text-wrapper {
+
     position: relative;
     display: inline-block;
     padding-top: 0.2em;
     padding-right: 0.05em;
     padding-bottom: 0.1em;
     overflow: hidden;
-  }
-  
-  .ml9 .letter {
+}
+
+.ml9 .letter {
     transform-origin: 50% 100%;
     display: inline-block;
     line-height: 1em;
-    color: #08859b;
-    font-size: 50px;
-    font-weight: 500;
-    font-family: "Sniglet", system-ui;
-  }
+    @include h1;
+}

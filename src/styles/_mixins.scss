@@ -1,16 +1,46 @@
-.btn{
+@use "variables" as *;
+
+@mixin btn{
     border: none;
-    background-color: #08859b ;
+    background-color: $color-primary ;
     padding: 10px 20px;
     border-radius: 20px;
-    color: white;
+    color: $color-white;
     font-weight: 600;
     margin: 15px 0;
     &:hover{
-        background-color: #0cc0df;
+        background-color: $color-hover;
     }
     a{
         text-decoration: none;
-        color: white;
+        color: $color-white;
     }
+}
+
+@mixin  h1 {
+    color: $color-primary;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: $text-font-2;
+
+}
+@mixin column{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+@mixin row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin row-space{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }

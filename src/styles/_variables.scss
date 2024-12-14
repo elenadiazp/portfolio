@@ -1,5 +1,20 @@
-$color-light:#ffffff;
-$text-light: #000000;
-$color-dark:$text-light;
-$text-dark:$color-light;
+$color-white:#ffffff;
+$color-black:#000000;
 $color-primary:#08859b;
+$color-hover:#0cc0df;
+$text-sub:#6d6d6d;
+$bg-container: #f9f9f9;
+$shadow-img:rgba(0, 0, 0, 0.5);
+
+$shadow-card:10px 10px 10px rgba(177, 177, 177, 0.5);
+$shadow-html:10px 10px 15px rgba(255, 174, 0, 0.5);
+$shadow-git:10px 10px 15px rgba(54, 54, 54, 0.5);
+$shadow-css:10px 10px 15px rgba(103, 179, 246, 0.5);
+$shadow-bootstrap:10px 10px 15px rgba(173, 120, 251, 0.5);
+$shadow-js:10px 10px 15px rgba(254, 212, 27, 0.5);
+$shadow-sass:10px 10px 15px rgba(248, 146, 239, 0.5);
+$shadow-figma: 10px 10px 15px rgba(109, 109, 109, 0.5);
+$shadow-visual:10px 10px 15px rgba(108, 185, 249, 0.5);
+$shadow-java:10px 10px 15px rgba(245, 107, 107, 0.5);
+
+$text-font-2:"Sniglet", system-ui;
