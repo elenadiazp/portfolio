@@ -1,8 +1,10 @@
+@use "globals" as *;
+
 header {
-    padding: 20px;
+    padding: $padding-20;
     ul {
         li {
-            margin-right: 20px;
+            margin-right: $margin-20;
         }
     }
 
@@ -10,25 +12,25 @@ header {
 
 .section1 {
     .container {
-        margin-right: 20px;
+        margin-right: $margin-20;
     }
 
     .container2 {
-        margin-left: 20px;
+        margin-left: $margin-20;
     }
 
 }
 
 .section2 {
-    margin: 100px 0;
+    margin: $margin-100 $margin-0;
 
     img {
-        margin-right: 100px;
+        margin-right: $margin-100;
 
     }
 
     .container3 {
-        margin-left: 20px;
+        margin-left: $margin-20;
 
         button {
             margin-top: 30px;
@@ -39,30 +41,30 @@ header {
 }
 
 .container4 {
-    padding: 100px 0;
+    padding: 100px $padding-0;
 
     h1 {
         margin-bottom: 40px;
 
         .container5 {
-            margin-top: 20px;
+            margin-top: $margin-20;
         }
     }
 }
 
 .container6,
 .container7 {
-    padding: 20px 0;
+    padding: $padding-20 $padding-0;
 
 
 }
 
 .container6 {
     .proyectos {
-        margin: 20px 50px;
+        margin: $margin-20 50px;
 
         .card {
-            margin: 20px;
+            margin: $margin-20;
             padding: 20px;
 
             .card-body {
@@ -79,7 +81,7 @@ header {
 .container7 {
     .contacto {
         div {
-            margin-top: 20px;
+            margin-top: $margin-20;
         }
     }
 }
@@ -87,5 +89,5 @@ header {
 
 
 footer {
-    padding: 20px;
+    padding: $padding-20;
 }

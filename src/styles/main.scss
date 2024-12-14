@@ -5,12 +5,12 @@
 @use "footer" as *;
 @use "globals" as *;
 *{
-    font-family: 'Montserrat', serif;
-    margin: 0;
-    padding: 0;
+    font-family:$text-font-1;
+    margin: $margin-0;
+    padding: $padding-0;
     box-sizing: border-box;
     a{
-        color: black;
+        color: $color-black;
         text-decoration: none;
     }
 
